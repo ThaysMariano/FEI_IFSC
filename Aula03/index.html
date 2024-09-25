@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula03</title>
+    <link rel="icon" type="image/x-icon" href="../IntroducaoAula02/imgs/f457112410268224bd1dc50d526f4c9a.jpg">
+
+    <style>
+        button{
+            width: 80px;
+            height: 50px;
+            background-color: rgb(123, 123, 235);
+            border: none;
+            border-radius: 10px;
+            font-weight: bold;
+            margin-left: 15px;
+            box-shadow: 5px 5px 5px rgb(187, 187, 187);
+            cursor: pointer;
+        }
+       button:active{
+        background-color: rgb(87, 87, 206);
+       }
+
+       img{
+        width: 400px;
+        border-radius: 40px;
+       }
+
+       body{
+        background-color: rgb(229, 236, 252);
+       }
+
+    </style>
+</head>
+
+<body>
+    <p>Opcoes de Target:</p>
+    
+<a href="index.html" target="_blank">Google Blank</a>
+<br>
+<a href="https://www.google.com/" target="_self">Google Self</a>
+<br>
+<a href="https://www.google.com/" target="_parent">Google Parent</a>
+<br>
+<a href="https://www.google.com/" target="_top">Google Top</a>
+
+<br>
+
+<p>Botoes:</p>
+<button onclick="document.location='../IntroducaoAula02/index.html'"> index</button>
+
+<button onclick="alert('Olá Mundo');">Ola </button>
+
+
+<button onclick="window.confirm('Confirma que quer sair da página');">Sair?</button>
+<br>
+<br>
+<p>Gaang</p>
+<img src="../IntroducaoAula02/imgs/images.jpeg" alt="Gaang"> 
+
+<p>Tabela normal</p>
+
+<table border="1">
+    <thead>
+    <tr>
+        <th>Letras</th>
+        <th>Numeros</th>
+    </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <th>AAAA</th>
+            <th>1111</th>
+        </tr>
+        <tr>
+            <th>BBBB</th>
+            <th>2222</th>
+        </tr>
+    </tbody>
+    <tfoot>
+        <tr>
+            <th>CCCC</th>
+            <th>3333</th>
+        </tr>
+    </tfoot>
+</table>
+
+<p>Lista Nao ordenada</p>
+<ul>
+<li>Cafe</li>
+<li>Cha</li>
+<li>Leite</li>
+</ul>
+
+<p>Lista Ordenada</p>
+<ol>
+    <li>Cafe</li>
+    <li>Cha</li>
+    <li>Leite</li>  
+</ol>
+
+
+
+</body>
+
+</html>
