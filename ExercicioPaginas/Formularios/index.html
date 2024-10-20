@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name=”viewport” content=”width=device-width, initial-scale=1″>
+  <title>NomeAgencia</title>
+
+  <style>
+    @viewport {
+     width: device-width ;
+      zoom: 1.0 ;
+    }
+    
+    body {
+      background-color: rgb(172, 200, 233);
+    }
+
+    input,
+    label,
+    select {
+      display: block;
+      font-size: 20px;
+
+    }
+
+    input {
+      width: 600px;
+      height: 40px;
+    }
+    section{
+      display: flex;
+      align-items: center;
+      justify-content:space-around;
+    }
+
+    form {
+      padding: 30px 0px 0px 30px;
+
+      width: 700px;
+      background-color: rgb(227, 171, 235);
+      border-radius: 30px;
+      border: solid 1px white;
+    }
+
+
+
+    header {
+      text-align: center;
+    }
+
+    footer {
+      text-align: center;
+    }
+
+
+
+
+
+
+    .botao {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .enviar {
+      width: 250px;
+      height: 60px;
+      background-color: rgb(125, 98, 245);
+      border-radius: 70px;
+      border: none;
+      box-shadow: 10px 5px 10px rgba(114, 114, 114, 0.8);
+      margin-bottom: 40px;
+      transition: 100ms;
+      font-size: 24px;
+      color: white;
+      font-weight: bold;
+
+    }
+
+    .enviar:hover {
+      transition: 100ms;
+      transform: translate(4px, 4px);
+    }
+
+    .enviar:active {
+      background-color: rgb(106, 80, 221);
+    }
+  </style>
+
+
+</head>
+
+
+
+
+
+<body>
+
+  <header>
+    <h1>NomeEmpresa</h1>
+    <h2>Formulário Contratação</h2>
+  </header>
+
+  <hr>
+
+  <section>
+
+
+    <form action="">
+
+
+      <label id="nome">Nome: </label>
+      <input type="text" placeholder="Nome Completo">
+
+      <label>Data de Nascimetno</label>
+      <input type="date">
+
+      <label>Anexar Currículo</label>
+      <input type="file">
+
+      <!--Colocar label for e id-->
+      <label>Selecione o estado que você reside</label>
+      <select>
+        <option>Estado</option>
+        <optgroup label="Região Norte">
+          <option>Acre</option>
+          <option>Amapá</option>
+          <option>Amazonas</option>
+          <option>Pará</option>
+          <option>Rondônia</option>
+          <option>Roraima</option>
+          <option>Tocantins</option>
+          <option>Pará</option>
+        </optgroup>
+        <optgroup label="Região Nordeste">
+          <option>Alagoas</option>
+          <option>Bahia</option>
+          <option>Ceará</option>
+          <option>Maranhão</option>
+          <option>Paraíba</option>
+          <option>Pernambuco</option>
+          <option>Piauí</option>
+          <option>Rio Grande do Norte</option>
+          <option>Sergipe</option>
+        </optgroup>
+        <optgroup label="Região Centro-Oeste">
+          <option>Distrito Federal</option>
+          <option>Goiás</option>
+          <option>Mato Grosso</option>
+          <option>Mato Grosso do Sul</option>
+        </optgroup>
+        <optgroup label="Região Sudeste">
+          <option>Espirito Santo</option>
+          <option>Minas Gerais</option>
+          <option>Rio de Janeiro</option>
+          <option>São Paulo</option>
+        </optgroup>
+        <optgroup label="Região Sul">
+          <option>Paraná</option>
+          <option>Rio Grande do Sul</option>
+          <option>Santa Catarina</option>
+        </optgroup>
+      </select>
+
+      <label>Telefone</label>
+      <input type="tel" placeholder="(  ) _____-____">
+
+      <label>E-mail: </label>
+      <input type="text" placeholder="E-mail">
+
+      <label>Àrea de interesse</label>
+      <input type="radio"> <label>Finanças</label>
+      <input type="radio"> <label>Marketing</label>
+      <input type="radio"> <label>Desenvolvimento Web</label>
+      <input type="radio"> <label>Desenvolvimento Backend</label>
+      <input type="radio"> <label>Analista de dados</label>
+      <input type="radio"> <label>Recursos Humanos</label>
+
+      <label>Assinale Apenas uma das opções abaixo</label>
+      <input type="radio"> <label>Estágio</label>
+      <input type="radio"> <label>Junior</label>
+      <input type="radio"> <label>Intermediario</label>
+      <input type="radio"> <label>Sênior</label>
+
+
+      <label>Tipo de Vaga</label>
+      <select>
+        <option value="">Home Office</option>
+        <option value="">Híbrido</option>
+        <option value="">Presencial</option>
+      </select>
+
+      <label>(Opcional) Por onde conheceu nosso site?</label>
+      <input type="checkbox"> <label>Sites de pesquisa</label>
+      <input type="checkbox"> <label>Amigos/Familiares</label>
+      <input type="checkbox"> <label>Instagram</label>
+      <input type="checkbox"> <label>Outros</label>
+
+
+
+      <div class=botao><button class="enviar">Enviar</button></div>
+    </form>
+  </section>
+
+  <hr>
+
+  <footer>
+    <pre>
+        Matéria Frontend I
+        Análise e Desenvolvimento de Sistemas -Segunda Fase
+        Outubro 2024
+    </pre>
+  </footer>
+
+  <!-- <pre>
+      Você é o responsável por desenvolver o site de uma agência de empregos. Você
+precisa criar um formulário para cadastrar os profissionais interessados em serem
+contratados.
+1. Crie um documento HTML completo com bod e head O título do seu
+documento deve ser o nome da agência.
+2. A página deve ter um título e uma breve descrição do objetivo do formulário.
+3. O formulário deve coletar o máximo possível de informações relevantes para
+ajudar o profissional a se posicionar no mercado.
+4. O formulário deve ter entradas de texto, de seleção, de tempo, de arquivo e
+numéricas, além de um botão de envio.
+5. O formulário deve ter pelo menos 10 entradas.
+    </pre> -->
+
+
+
+
+
+
+
+</body>
+
+</html>

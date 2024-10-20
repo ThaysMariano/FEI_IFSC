@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thays Mariano</title>
+
+    <style>
+        body {
+            background-color: rgba(27, 73, 102, 0.9);
+
+        }
+
+        p,
+        table,
+        th,
+        td,
+        h1,
+        h2 {
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+        }
+
+        header {
+            text-align: center;
+        }
+
+        footer {
+            text-align: center;
+        }
+
+        table,
+        th,
+        tr {
+            border: 1px black solid;
+            width: 900px;
+
+        }
+
+        table {
+            margin-left: 18%;
+            margin-bottom: 40px;
+            margin-top: 60px;
+            border-radius: 10px;
+        }
+
+        th,
+        tr {
+            font-size: 20px;
+            font-weight: normal;
+            border-radius: 8px;
+
+        }
+
+        th {
+            height: 40px;
+        }
+
+        .bold {
+            font-weight: bold;
+        }
+
+        img {
+            height: 70px;
+            border-radius: 10px;
+        }
+
+        #onibus {
+            width: 1000px;
+            margin-left: 15%;
+            background-color: rgb(49, 49, 43);
+        }
+
+        #horario {
+            background-color: rgb(49, 49, 43);
+            border-spacing: 2px;
+        }
+
+        .pontoVermelhoIFSC {
+            background-color: rgb(224, 93, 93);
+        }
+
+        .pontoRoxoOnibus {
+            background-color: rgb(170, 76, 194);
+        }
+
+        .trTituloLadoIFSC,
+        .trTituloCimaIFSC {
+            background-color: rgb(111, 228, 96);
+        }
+
+        .trTituloLadoOnibus,
+        .trTituloCimaOnibus {
+            background-color: rgb(74, 171, 201);
+        }
+
+        .thImpar {
+            background-color: rgb(147, 241, 190);
+        }
+
+        .thPar {
+            background-color: rgb(150, 219, 240);
+        }
+
+        .vazia {
+            opacity: 0.6;
+        }
+
+        .trPar {
+            background-color: rgba(115, 180, 211, 0.9);
+            height: 90px;
+        }
+
+        .trImpar {
+            background-color: rgba(143, 216, 216, 0.9);
+            height: 90px;
+        }
+
+        .imgTexto {
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+        }
+    </style>
+
+
+</head>
+
+<body>
+    <header>
+        <h1>Thays Mariano</h1>
+        <h2>Análise e Desenvolvimento de Sistemas</h2>
+    </header>
+
+    <hr>
+
+    <section>
+        <table id="horario">
+            <tr class="trTituloCimaIFSC">
+                <th class="bold" colspan="7" scope="colgroup" id="horariosIFSC">Horários IFSC</th>
+            </tr>
+            <tr class="trTituloCimaIFSC">
+                <th class="pontoVermelhoIFSC"> </th>
+                <th class="bold" colspan="6" scope="colgroup" id="diasSemana">Dias da Semana</th>
+            </tr>
+            <tr class="trTituloLadoIFSC">
+                <th class="bold" rowspan="11" scope="rowgroup" id="horarios">Horários</th>
+            </tr>
+            <tr>
+                <th class="thPar"> &#11212;</th>
+                <th class="bold thImpar" id="segunda">SEG</th>
+                <th class="bold thPar" id="terca">TER</th>
+                <th class="bold thImpar" id="quarta">QUA</th>
+                <th class="bold thPar" id="quinta">QUI</th>
+                <th class="bold thImpar" id="sexta">SEX</th>
+            </tr>
+            <tr>
+                <th class="bold thPar" id="trezeTrinta">13h30 </th>
+                <th class="thImpar vazia" headers="segunda trezeTrinta"></th>
+                <th class="thPar" headers="terca trezeTrinta">ELD</th>
+                <th class="thImpar vazia" headers="quarta trezeTrinta"></th>
+                <th class="thPar vazia" headers="quinta trezeTrinta"></th>
+                <th class="thImpar vazia" headers="sexta trezeTrinta"> </th>
+            </tr>
+            <tr>
+                <th class="bold thPar" id="duasVinteCinco"> 14h25 </th>
+                <th class="thImpar vazia" headers="segunda duasVinteCinco"></th>
+                <th class="thPar" headers="terca duasVinteCinco">ELD</th>
+                <th class="thImpar vazia" headers="quarta duasVinteCinco"></th>
+                <th class="thPar vazia" headers="quinta duasVinteCinco"></th>
+                <th class="thImpar vazia" headers="sexta duasVinteCinco"> </th>
+
+            </tr>
+            <tr>
+                <th class="bold thPar" id="quinzeQuarenta">15h40 </th>
+                <th class="thImpar vazia" headers="segunda quinzeQuarenta"></th>
+                <th class="thPar vazia" headers="terca quinzeQuarenta"></th>
+                <th class="thImpar vazia" headers="quarta quinzeQuarenta"></th>
+                <th class="thPar" headers="quinta quinzeQuarenta">ELD</th>
+                <th class="thImpar vazia" headers="sexta quinzeQuarenta"> </th>
+            </tr>
+            <tr>
+                <th class="bold thPar" id="dezesseisTrintaCinco">16h35 </th>
+                <th class="thImpar vazia" headers="segunda dezesseisTrintaCinco"></th>
+                <th class="thPar vazia" headers="terca dezesseisTrintaCinco"></th>
+                <th class="thImpar vazia" headers="quarta dezesseisTrintaCinco"></th>
+                <th class="thPar" headers="quinta dezesseisTrintaCinco">ELD</th>
+                <th class="thImpar vazia" headers="sexta dezesseisTrintaCinco"></th>
+            </tr>
+            <tr>
+                <th class="bold thPar" id="separacao"> -- </th>
+                <th class="thImpar vazia" headers="segunda separacao"></th>
+                <th class="thPar vazia" headers="terca separacao"></th>
+                <th class="thImpar vazia" headers="quarta separacao"></th>
+                <th class="thPar vazia" headers="quinta separacao"></th>
+                <th class="thImpar vazia" headers="sexta separacao"> </th>
+            </tr>
+            <tr>
+                <th class="bold thPar" id="dezoitoTrinta">18h30</th>
+                <th class="thImpar" headers="segunda dezoitoTrinta"> EST</th>
+                <th class="thPar" headers="terca dezoitoTrinta">POO</th>
+                <th class="thImpar" headers="quarta dezoitoTrinta">AEI</th>
+                <th class="thPar" headers="quinta dezoitoTrinta">POO</th>
+                <th class="thImpar" headers="sexta dezoitoTrinta"> RCO</th>
+            </tr>
+            <tr>
+                <th class="bold thPar" id="dezenoveVinteCinco">19h25</th>
+                <th class="thImpar" headers="segunda dezenoveVinteCinco"> EST</th>
+                <th class="thPar" headers="terca dezenoveVinteCinco">POO</th>
+                <th class="thImpar" headers="quarta dezenoveVinteCinco">AEI</th>
+                <th class="thPar" headers="quinta dezenoveVinteCinco">POO</th>
+                <th class="thImpar" headers="sexta dezenoveVinteCinco"> RCO</th>
+            </tr>
+            <tr>
+                <th class="bold thPar" id="vinteQuarenta">20h40</th>
+                <th class="thImpar" headers="segunda vinteQuarenta"> COE</th>
+                <th class="thPar" headers="terca vinteQuarenta">FEI</th>
+                <th class="thImpar" headers="quarta vinteQuarenta">EST</th>
+                <th class="thPar" headers="quinta vinteQuarenta">FEI</th>
+                <th class="thImpar" headers="sexta vinteQuarenta"> RCO</th>
+            </tr>
+            <tr>
+                <th class="bold thPar" id="vinteUmTrintaCinco">21h35</th>
+                <th class="thImpar" headers="segunda vinteUmTrintaCinco"> COE</th>
+                <th class="thPar" headers="terca vinteUmTrintaCinco">FEI</th>
+                <th class="thImpar" headers="quarta vinteUmTrintaCinco">EST</th>
+                <th class="thPar" headers="quinta vinteUmTrintaCinco">FEI</th>
+                <th class="thImpar" headers="sexta vinteUmTrintaCinco"> RCO</th>
+            </tr>
+        </table>
+
+        <table id="onibus">
+            <tr class="trTituloCimaOnibus">
+                <th class="bold" colspan="6" scope="colgroup" id="saidaFpolis">Saída de Florianópolis em 17/10/2024 </th>
+            </tr>
+            <tr class="trTituloCimaOnibus">
+                <th class="pontoRoxoOnibus"></th>
+                <th class="bold" colspan="5" scope="colgroup" id="detalhesOnibus">Detalhes</th>
+            </tr>
+            <tr class="trTituloLadoOnibus">
+                <th class="bold" rowspan="7" scope="rowgroup" id="destinos">Destinos</th>
+            </tr>
+            <tr class="trImpar">
+                <th>&#11212;</th>
+                <th class="bold" id="opcoesHorarios">Opcões de Horários</th>
+                <th class="bold" id="logoEmpresa">Logo/Empresa</th>
+                <th class="bold" id="tarifa"> Tarifa</th>
+                <th class="bold" id="classe"> Classe</th>
+            </tr>
+            <tr class="trPar">
+                <th class="bold" id="curitiba">Curitiba -PR</th>
+                <th headers="opcoesHorarios curitiba"> 6h ou 21h</th>
+                <th headers="logoEmpresa curitiba">
+                    <div class="imgTexto"><img src="imgs/flixbus.png" alt="logo Flixbus">FlixBus</div>
+                </th>
+                <th headers="tarifa curitiba">R$59,99</th>
+                <th headers="classe curitiba"> Semileito</th>
+
+            </tr>
+            <tr class="trImpar">
+                <th class="bold" id="portoAlegre">Porto Alegre -RS</th>
+                <th headers="opcoesHorarios portoAlegre"> 6h30 ou 10h15</th>
+                <th headers="logoEmpresa portoAlegre">
+                    <div class="imgTexto"> <img src="imgs/santoanjo.png" alt="logo Santo Anjo"> SantoAnjo</div>
+                </th>
+                <th headers="tarifa portoAlegre">R$157,27 </th>
+                <th headers="classe portoAlegre"> Leito</th>
+            </tr>
+            <tr class="trPar">
+                <th class="bold" id="lages">Lages -SC</th>
+                <th headers="opcoesHorarios lages"> 7h15 ou 20h</th>
+                <th headers="logoEmpresa lages">
+                    <div class="imgTexto"><img src="imgs/reunidas.png" alt="logo Reunidas">Reunidas</div>
+                </th>
+                <th headers="tarifa lages">R$100,96</th>
+                <th headers="classe lages">Convencional </th>
+            </tr>
+            <tr class="trImpar">
+                <th class="bold" id="chapeco">Chapecó -SC</th>
+                <th headers="opcoesHorarios chapeco">12h45 ou 19h20 </th>
+                <th headers="logoEmpresa chapeco">
+                    <div class="imgTexto"><img src="imgs/reunidas.png" alt="logo Reunidas">Reunidas</div>
+                </th>
+                <th headers="tarifa chapeco"> R$176,31 </th>
+                <th headers="classe chapeco">Convencional </th>
+            </tr>
+            <tr class="trPar">
+                <th class="bold" id="jaraguaSul">Jaraguá do Sul -SC</th>
+                <th headers="opcoesHorarios jaraguaSul">6h ou 15h10 </th>
+                <th headers="logoEmpresa jaraguaSul">
+                    <div class="imgTexto"> <img src="imgs/logo_auto-viacao-catarinense_LKWTJQ.png"
+                            alt="logo Catarinense">Catarinense</div>
+                </th>
+                <th headers="tarifa jaraguaSul">R$90,51 </th>
+                <th headers="classe jaraguaSul">Convencional </th>
+            </tr>
+
+        </table>
+        <audio id="audio" controls autoplay>
+            <source src="audio/summernostalgiaCurto.mp3" type="audio/mp3">
+        </audio>
+
+    </section>
+    <footer>
+        <hr>
+        <pre>
+        Matéria Frontend I
+        Análise e Desenvolvimento de Sistemas -Segunda Fase
+        Outubro 2024
+
+    </pre>
+
+    </footer>
+
+</body>
+
+</html>
